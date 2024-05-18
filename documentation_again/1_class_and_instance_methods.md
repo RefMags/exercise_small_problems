@@ -1,4 +1,4 @@
-The methods `File::path` and `File#path` are located on the File class documentation page.
+The methods `File::path` and `File#path` are located on the File class documentation page in the CoreAPI.
 
 We call Class methods on the class: File::path is a class hence:
 
