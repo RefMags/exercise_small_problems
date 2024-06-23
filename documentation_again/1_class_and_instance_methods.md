@@ -4,6 +4,7 @@ We call Class methods on the class: File::path is a class hence:
 
 ```ruby
 puts File.path('bin') # calls the class method `File::path` since we are calling it on `File`
+File.path("/ruby/file.rb")
 ```
 returns the string representation of the path
 
