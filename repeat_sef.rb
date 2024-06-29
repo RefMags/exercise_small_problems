@@ -28,4 +28,4 @@ references `hello`.
 - the evaluation of the code, is intended to print out the `str` as many times as
 the `num` that are referenced by this variable.
 - the code describes a concept of method definitions and variables as pointers.
-end
+=end
