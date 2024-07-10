@@ -5,7 +5,7 @@
 
 # step(by: step, to: limit) {|i| block } -> self
 
-= begin
+=begin
   the method call `step` can be found in the `Numeric` class since it is
   the superclass of all numeric types.
   First we can search in either the Integer, Float, Math as that is where we encounter
@@ -37,6 +37,4 @@
   - (8 + 2 ) * 10
 
   squares # => [16, 36, 64, 100]
-
-
 =end
