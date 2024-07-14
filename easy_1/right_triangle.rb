@@ -2,7 +2,7 @@
 
 Problem:
 - Method takes in a positive integer `v`
-- display a right angle triange whose sides each have `n` stars
+- display a right angle triangle whose sides each have `n` stars
 - the hypotenuse of the triangle should have one end at the lower-left of the
 triangle and one end on the the other end of the upper-right.
 
@@ -55,16 +55,31 @@ def triangle(rows)
   # iterate over the number of rows
   for row in 1..rows
     # print spaces for right justification
-    print ' ' * (rows - row)
+    print '  ' * (rows - row)
     # Print the `*` for the triangle
-    puts '*' * row
+    puts '* ' * row
   end
 end
 
 triangle(4)
 
-def triangle(rows)
-  rows.times {|row| puts ('* ' * (row+1)).rjust(rows * 2)}
+def upside_down_triangle(rows)
+  for row in rows.downto(1)
+    print '  ' * (rows - row)
+    puts '* ' * row
+  end
 end
 
-triangle(5)
+upside_down_triangle(3)
+
+def down_triangle(rows)
+  rows.downto(1) { |row| puts ('* ' * (row - 0)).rjust(rows * 2) }
+end
+
+upside_down_triangle(5)
+
+def right_triangle(rows)
+  rows.times { |row| puts ('* ' * (row + 1)).rjust(rows * 2) }
+end
+
+right_triangle(5)
