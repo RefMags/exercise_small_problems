@@ -28,3 +28,13 @@ be accessed within the block, similarly block parameters also have their own sco
 
 
 # Modifying the code
+```ruby
+num = 25
+5.times do |x|
+  5.times do |n|
+    if num == 25
+    puts "#{x} * #{num} == 25"
+    end
+  end
+end
+```
