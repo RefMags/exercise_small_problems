@@ -1,7 +1,6 @@
 num = 25
 5.times do |x|
-  puts "#{x}"
-  5.times do |n|
+  5.times do |num|
     if num == 25
     puts "#{x} * #{num} == 25"
     end
